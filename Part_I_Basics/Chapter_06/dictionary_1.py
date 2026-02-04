@@ -7,8 +7,8 @@ personal_information = {
     "city" : "Machala",
     }
 
-for clave, valor in personal_information.items():
-    print(clave , valor)
+for key, value in personal_information.items():
+    print(key , value)
 
 #6-2. Favorite Numbers:
 favorite_numbers = {
@@ -19,8 +19,8 @@ favorite_numbers = {
     "viki" : 1,
 }
 
-for clave, valor in favorite_numbers.items():
-    print(clave,valor)
+for key, value in favorite_numbers.items():
+    print(key, value)
 
 #6-3. Glossary:
 
@@ -32,5 +32,5 @@ programming_words = {
     "boolean" : "is a fundamental concept used for logical operations and decision-making"
 }
 
-for clave, valor in programming_words.items():
-    print(f"{clave}:\n\t{valor}")
+for key, value in programming_words.items():
+    print(f"{key}:\n\t{value}")
