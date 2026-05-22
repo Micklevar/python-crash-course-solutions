@@ -90,4 +90,4 @@ for city, city_info in cities.items():
     fact = city_info['fact']
     
     print(f"{city.title()}:\n\tCountry: {country.title()}\n\tPopulation: {population}\n\tFact: {fact}")
-    
+
