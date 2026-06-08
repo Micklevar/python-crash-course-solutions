@@ -2,7 +2,9 @@
 
 def ingredients_sandwiches(*ingredients):
 
-    print(f"\nLos ingredientes del sandwich seran:\n")
+    """Add ingredients to a sandwich"""
+
+    print(f"\nThe ingredients of the sandwich will be:\n")
 
     for ing in ingredients:
         print(f"- {ing}")
