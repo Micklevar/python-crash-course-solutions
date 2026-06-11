@@ -7,7 +7,7 @@ def build_profile(first, last, **user_info):
             first (str): first name of user.
             last (str): Last name of user.
 
-        Output:
+        Return:
             Dict
     """
 
