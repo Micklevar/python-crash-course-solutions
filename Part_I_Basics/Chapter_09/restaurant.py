@@ -1,4 +1,4 @@
-# 9-6. Ice Cream Stand:
+""" A simple creation of restaurant """
 
 class Restaurant:
     """
@@ -11,6 +11,7 @@ class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.name = restaurant_name
         self.type = cuisine_type
+        self.number_served = 10
 
     def describe_restaurant(self):
         """Describe a name and type of cuisine of restaurant"""
@@ -19,22 +20,22 @@ class Restaurant:
     def open_restaurant(self):
         """Report that restaurant open"""
         print("The restaurant is open!")
-
-class IceCreamStand(Restaurant):
-    """Create a simple ice cream restaurant"""
-    def __init__(self, restaurant_name, cuisine_type):
+    def set_number_served(self, served):
         """
-        Initialize attributes of the parent class.
+        Set the number of customers 
+        that have been served.
+
+            Args:
+                served (int): Number of costumers that have
+                            been served.
         """
-        super().__init__(restaurant_name, cuisine_type)
-        self.flavors = ['chocolate', 'oreo', 'mym']
+        self.number_served = served
+    def increment_number_served(self, served):
+        """
+        Increment the number of customers 
+        that have been served.
 
-    def display_flavors(self):
-        """Display the name of flavors available"""
-        for flavor in self.flavors:
-            print(flavor)
-
-
-boggati = IceCreamStand('bogatti', 'dessert')
-boggati.describe_restaurant()
-boggati.display_flavors()
+            Args:
+                served (int): Number of new served
+        """
+        self.number_served += served

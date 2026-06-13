@@ -1,4 +1,4 @@
-# 9-7. Admin:
+""" Class to create a different types of users """
 
 class User:
     """
@@ -45,22 +45,3 @@ class User:
     def reset_login_attempts(self):
         """ Resets the value of login attempts to 0"""
         self.login_attempts = 0
-
-class Admin(User):
-    """Create a simple user type Admin"""
-    def __init__(self, first_name, last_name, age, country):
-        """Initialize attributes of the parent class"""
-
-        super().__init__(first_name, last_name, age, country)
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
-
-    def show_privileges(self):
-        print("The privilege of administrator are:\n")
-        for privilege in self.privileges:
-            print(f"- {privilege}")     
-
-# Instance the class to create a object 'first_admin'
-first_admin = Admin('Alejandro', 'Santos', 23, 'Ecuador')
-
-first_admin.describe_user()
-first_admin.show_privileges()

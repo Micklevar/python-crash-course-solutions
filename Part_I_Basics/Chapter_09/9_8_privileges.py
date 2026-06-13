@@ -1,4 +1,4 @@
-# 9-7. Admin:
+# 9-8. Privileges:
 
 class User:
     """
